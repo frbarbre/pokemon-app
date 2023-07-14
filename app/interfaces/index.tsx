@@ -8,6 +8,7 @@ export interface PokemonData {
     {
       name: string;
       url: string;
+      dex: string;
     }
   ];
 }
@@ -65,4 +66,17 @@ export interface Pokemon {
 export interface PokemonCard {
   dexNumber: string;
   pokemon: { name: string; url: string };
+}
+
+export interface SearchProps {
+  value: string;
+  isWriting: boolean;
+  setIsWriting: (isWriting: boolean) => void;
+  sortValue: "number" | "letter";
+  setSortValue: (sortValue: "number" | "letter") => void;
+  sortBtn: boolean;
+  setSortBtn: (sortBtn: boolean) => void;
+  handleSubmit: (e: any) => void;
+  handleClick: () => void;
+  handleChange: (e: any) => void;
 }

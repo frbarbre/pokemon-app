@@ -39,6 +39,9 @@ module.exports = {
       },
       backgroundImage: {
         pokeball: "url('/pokeball-bg.png')"
+      },
+      minHeight: {
+        calcHeight: "calc(100vh - 146px)"
       }
     },
   },
